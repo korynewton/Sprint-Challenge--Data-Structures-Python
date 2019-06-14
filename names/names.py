@@ -71,3 +71,14 @@ for name in names_2:
 end_time = time.time()
 print(f"{len(duplicates)} duplicates:\n\n{', '.join(duplicates)}\n\n")
 print(f"runtime: {end_time - start_time} seconds")
+
+# stretch attempt
+start_time = time.time()
+
+
+duplicates_stretch = set(names_1) & set(names_2)
+
+
+end_time = time.time()
+print(f"{len(duplicates_stretch)} duplicates:\n\n{', '.join(duplicates_stretch)}\n\n")
+print(f"runtime: {end_time - start_time} seconds")
